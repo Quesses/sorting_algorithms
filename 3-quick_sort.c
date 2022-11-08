@@ -81,3 +81,4 @@ void quick_sort(int *array, size_t size)
 
 	quicksort(array, 0, hi, size);
 }
+
