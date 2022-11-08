@@ -23,6 +23,8 @@ void insertion_sort_list(listint_t **list)
 		while (current && current->n > next_node->n)
 		{
 			current->next = next_node->next;
+			if (next_node->next != NULL)
+				next_node->next->prev = next_node->prev;
 			next_node->next = current;
 			if (current->next != NULL)
 				current->next->prev = current;
@@ -44,4 +46,3 @@ void insertion_sort_list(listint_t **list)
 		next_node = pos;
 	}
 }
-
