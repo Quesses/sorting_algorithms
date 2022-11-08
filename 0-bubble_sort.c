@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * void bubble_sort: implements the bubble sort algorithm on an array of integers
+ * bubble_sort- implements the bubble sort algorithm on an array of integers
  *
  * @array: array of integers
  * @size: the size of the given array
@@ -13,13 +13,12 @@ void bubble_sort(int *array, size_t size)
 
 	if (array == NULL || size < 2)
 		return;
-	while(j > 0 && flag)
+	while (j > 0 && flag)
 	{
 		flag = 0;
-		
-		for(i = 0; i < (j - 1); i++)
+		for (i = 0; i < (j - 1); i++)
 		{
-			if(array[i] > array[i + 1])
+			if (array[i] > array[i + 1])
 			{
 				tmp = array[i];
 				array[i] = array[i + 1];
