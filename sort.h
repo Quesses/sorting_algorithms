@@ -1,5 +1,5 @@
-#ifndef SORT_H
-#define SORT_H
+#ifndef __SORT_H__
+#define __SORT_H__
 
 
 #include <stdio.h>
@@ -31,4 +31,4 @@ void quick_sort(int *array, size_t size);
 
 
 
-#endif /** _SORT_H_ **/
+#endif
